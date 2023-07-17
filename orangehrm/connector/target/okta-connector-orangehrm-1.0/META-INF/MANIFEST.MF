@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: okta-connector-orangehrm
+Implementation-Version: 1.0
+Implementation-Vendor-Id: okta
+Created-By: Apache Maven

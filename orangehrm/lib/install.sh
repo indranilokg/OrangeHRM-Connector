@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=scim-server-sdk-02.00.15.jar -DgroupId=com.okta.scim.sdk -DartifactId=scim-server-sdk -Dpackaging=jar -Dversion=02.00.15

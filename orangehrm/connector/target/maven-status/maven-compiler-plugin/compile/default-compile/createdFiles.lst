@@ -1,0 +1,4 @@
+com/okta/scim/orangehrm/ConnectorImpl.class
+com/okta/scim/server/example/SCIMConnectorUtil.class
+com/okta/scim/server/example/SCIMServiceImpl.class
+com/okta/scim/orangehrm/ConnectorUtil.class
