@@ -38,7 +38,7 @@ During the build process, you'll be presented with a login URL (OAuth2 device-co
 ```console
 docker compose up
 ```
-This command will run the built images, and you're all set to show off Okta on-premise provisioning!
+This command will run the built images!
 In the Okta console in the dashboard->agents menu you can see that the OPP agent is connected.
 To validate the operation of the SCIM service, visit the following URL:
 [http://localhost:8080/okta-connector-orangehrm-1.0.war/Users]()
