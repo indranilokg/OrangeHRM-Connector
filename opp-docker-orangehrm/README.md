@@ -1,11 +1,12 @@
 # opp-docker-orangehrm
 
-Note: This docker script is based on Dan Cinnamon's [opp-docker](https://github.com). Few modifications have been done, such as allowing HTTP and the OrangeHRM connector war file.
+**Note:** This docker script is based on **Dan Cinnamon**'s [opp-docker](https://github.com/dancinnamon-okta/opp-docker). Few modifications have been done, such as allowing HTTP and the OrangeHRM connector war file.
 
 
 This repository contains an easy way to run Okta's on-premise provisioning agent within a docker container on your own machine.  Included are the following containers:
-* A container running the on-premise provisioning agent. This also includes a sharable volume to place CSV files for use with Okta's CSV directory functionality.
-* A container running a pre-compiled version of the Okta on-premise provisioning SDK sample. That sample uses the Okta SDK to host a SCIM service, which uses local .json files as it's data store. This can be used to show a bi-directional on-premise provisioning connection.
+
+* A container running the on-premise provisioning agent. 
+* A container running a pre-compiled version of the OrangeHRM connector sample. That sample uses the Okta SDK to host a SCIM service.
 
 
 ## How to install
@@ -18,7 +19,7 @@ This repository contains an easy way to run Okta's on-premise provisioning agent
 
 ### Step 1 - Download this repository
 ```console
-git clone https://github.com/dancinnamon-okta/opp-docker.git
+git clone https://github.com/indranilokg/OrangeHRM-Connector.git
 ```
 
 ### Step 2 - Copy and fill in the .env file
@@ -40,7 +41,7 @@ docker compose up
 This command will run the built images, and you're all set to show off Okta on-premise provisioning!
 In the Okta console in the dashboard->agents menu you can see that the OPP agent is connected.
 To validate the operation of the SCIM service, visit the following URL:
-https://localhost:8443/scim-server-example-02.00.10-SNAPSHOT/Users
+[http://localhost:8080/okta-connector-orangehrm-1.0.war/Users]()
 
-In Okta, when configuring OPP for a given application, the base URL is:
-https://localhost:8443/scim-server-example-02.00.10-SNAPSHOT
+In Okta, when configuring OPP, the base URL is:
+[http://localhost:8080/okta-connector-orangehrm-1.0.war]()
