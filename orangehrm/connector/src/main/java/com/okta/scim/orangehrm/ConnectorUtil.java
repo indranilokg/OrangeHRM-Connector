@@ -31,7 +31,7 @@ public class ConnectorUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(ConnectorUtil.class);
     
     private static String myDriver = "com.mysql.cj.jdbc.Driver";
-    private static String myUrl = "jdbc:mysql://ec2-3-12-111-22.us-east-2.compute.amazonaws.com/orangehrm";
+    private static String myUrl = "jdbc:mysql://<host>/<db>";
     private static Connection dbconn = null;
 
    
